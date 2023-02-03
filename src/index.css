@@ -11,3 +11,56 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Markazi";
+  src: local("Markazi"),
+    url("./Fonts/Markazi.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karla";
+  src: local("Markazi"),
+    url("./Fonts/Karla.ttf") format("truetype");
+}
+
+.heroTeaser {
+  width: 100%;
+  background-color: #495e57;
+  margin-top: 20px;
+  padding: 30px;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.heroteaser-image {
+  position: absolute;
+  border-radius: 40px;
+
+}
+
+@media only screen and (max-width: 992px) {
+  .heroteaser-image {
+    display: none;
+  }
+}
+
+.heroTeaser h1 {
+  font-family: 'Markazi';
+  font-size: 64pt;
+  color: #f4ce14;
+}
+
+.heroTeaser h2 {
+  font-family: 'Markazi';
+  font-size: 40pt;
+  color: #edefee;
+}
+
+.heroTeaser .description {
+  font-family: 'Karla';
+  font-size: 18pt;
+  color: #edefee;
+}
