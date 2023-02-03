@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import heroImage from "./Assets/hero-image.jpg";
+import CtaButton from "./Button";
 
 export const HeroTeaser = () => {
   return (
@@ -14,6 +15,7 @@ export const HeroTeaser = () => {
               We are family owned Indian restaurant, focussed on traditional
               recipes served with a modern twist.
             </div>
+            <CtaButton text="Reserve a Table"/>
           </Col>
           <Col lg={4}>
             <img
