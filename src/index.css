@@ -42,6 +42,7 @@ code {
   .heroteaser-image {
     display: none;
   }
+  
 }
 
 .heroTeaser h1 {
@@ -87,4 +88,72 @@ code {
 }
 .bannerCta div{
   margin-top: 26px;
+}
+
+.mcard {
+  min-height:600px;
+  background-color: #edefee ;
+  border-radius: 30px;
+    position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .mcard {
+      min-height:700px;
+      margin: 20px;
+    }
+}
+
+.mcard .cimage{
+  max-width: 100%;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.mcard .titleContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-top: 30px;
+}
+.mcard .titleContainer .title{
+  font-size: 18pt;
+  font-weight: bold;
+  font-family: 'Karla';
+}
+.mcard .titleContainer .price{
+  font-size: 16pt;
+    font-weight: bold;
+    font-family: 'Karla';
+    color: #ee9972;
+}
+.mcard .description{
+  font-family: 'Karla';
+  font-size: 16pt;
+  line-height: 1.5;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+.mcard .cbutton{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+  font-family: 'Karla';
+    font-size: 16pt;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .mcard .cbutton{
+    bottom: 10px;
+      left: 20px;
+  }
+}
+.mcard .cbutton:hover{
+box-shadow: 9px 7px 36px -8px rgba(0, 0, 0, 0.75);
+  transition: all 0.2s;
+}
+.cardContainer{
+  margin-top: 40px;
 }

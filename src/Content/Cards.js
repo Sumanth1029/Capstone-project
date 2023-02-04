@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
 
-function Cards() {
+export const Cards = (props) => {
   return (
-    <div>Cards</div>
-  )
-}
-
-export default Cards
+    <div className="mcard">
+      <div>
+        <img className="cimage" src={props.data.imageURL} />
+      </div>
+      <div className="titleContainer">
+        <div className="title">{props.data.title}</div>
+        <div className="price">$ {props.data.price}</div>
+      </div>
+      <div className="description">{props.data.description}</div>
+      <div className="cbutton">Order a delivery</div>
+    </div>
+  );
+};
