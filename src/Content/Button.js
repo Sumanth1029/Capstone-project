@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import { useNavigate } from "react-router-dom";
 
-export const CtaButton =(props)=> {
+export const CtaButton = (props) => {
+  const navigate = useNavigate();
+
+  const reservations = () => {
+    navigate(`/${props.linkto}`);
+  };
   return (
-   <div className="cta">{props.text}</div>
-  )
-}
+    <button className="cta" onClick={reservations}>
+      {props.text}
+    </button>
+  );
+};
 
-export default CtaButton
+export default CtaButton;
